@@ -7,9 +7,9 @@
     "vitepress": "1.0.0-beta.3"
   },
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
     "build:github": "cross-env base=/blogs/ vitepress build"
   },
   "devDependencies": {

@@ -3,23 +3,26 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "mz-dfhp"
+  text: "个人知识体系"
+  tagline: 
   actions:
     - theme: brand
-      text: Markdown Examples
+      text: 开始
       link: /markdown-examples
     - theme: alt
-      text: API Examples
+      text: 关于
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 💡
+    title: 前端
+    details: 知识整理
+  - icon: ⚡️
+    title: 服务端
+    details: 知识整理
+  - icon: 🛠️
+    title: 其他
+    details: 知识整理
 ---
 
