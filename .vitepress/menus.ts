@@ -43,11 +43,11 @@ export default [
     items: [
       { text: "git", link: "/page/other/git/" },
       {
-        text: "leetcode",
+        text: "算法",
         collapsed: false,
         items: [
-          { text: "1-50", link: "/page/other/leetcode/1-50" },
-          { text: "50-100", link: "/page/other/leetcode/50-100" },
+          { text: "常见", link: "/page/other/algorithm/common" },
+          { text: "leetcode", link: "/page/other/algorithm/leetcode" },
         ],
       },
     ],
