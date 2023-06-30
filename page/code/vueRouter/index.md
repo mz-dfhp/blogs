@@ -92,11 +92,11 @@ outline: deep
       const aboutEl = document.querySelector("#about");
       const contenEl = document.querySelector("#content");
 
-      var originalPushState = history.pushState;
+      let originalPushState = history.pushState;
 
       history.pushState = function () {
-        var result = originalPushState.apply(this, arguments);
-        var pushStateEvent = new Event("popstate");
+        const result = originalPushState.apply(this, arguments);
+        const pushStateEvent = new Event("popstate");
         window.dispatchEvent(pushStateEvent);
         return result;
       };
@@ -204,3 +204,8 @@ app.mount('#app')
 
 // 现在，应用已经启动了！
 ```
+
+- 导出一个 createRouter 方法 返回 router 实例
+- createRouter 接受一个对象 对象两个参数
+- routes 路由表
+- history 路由模式 createWebHashHistory 　|　createWebHistory 
