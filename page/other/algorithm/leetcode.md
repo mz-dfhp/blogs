@@ -36,29 +36,29 @@ outline: deep
 - 只会存在一个有效答案
 
 
-```js{4}
+```ts{4}
 // 双重循环
-function twoSum(nums, target) {
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if (nums[i] + nums[j] === target) {
-                 return [i, j];
-            }
-        }
-    }
-}
-// 哈希
-
 function twoSum(nums: number[], target: number) {
-  let map: Record<string, number> = {};
-  nums.forEach((item, i) => {
-    map[item] = nums[i];
-  });
-  nums.forEach((item, i) => {
-    if (map[target - item] && map[target - item] !== i) {
-      return [i, target - map[item]];
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = nums.length - i - 1; j < nums.length; i++) {
+      if (i + j === target) {
+        return [i, j];
+      }
     }
-  });
+  }
+}
+
+// 哈希
+function twoSum(nums: number[], target: number) {
+  const map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    map.set(nums[i], i);
+  }
+  for (let j = 0; j < nums.length; j++) {
+    if (map.has(target - nums[j]) && map.get(target - nums[j]) !== j) {
+      return [j, map.get(target - nums[j])];
+    }
+  }
 }
 ```
 
