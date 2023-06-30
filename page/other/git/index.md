@@ -7,7 +7,7 @@ outline: deep
 ## commit 相关
 ### git取消上次commit到暂存区
 
-```
+```bash
 git reset HEAD^
 
 --soft
@@ -22,7 +22,7 @@ HEAD^ 表示上一个版本，即上一次的commit，几个^代表几次提交�
 
 ### git 修改commit信息
 
-```
+```bash
 git commit --amend 
 进入vim编辑模式 i(输入) esc(退出编辑) :eq(保存)
 ```
