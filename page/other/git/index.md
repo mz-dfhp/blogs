@@ -24,5 +24,5 @@ HEAD^ 表示上一个版本，即上一次的commit，几个^代表几次提交�
 
 ```bash
 git commit --amend 
-进入vim编辑模式 i(输入) esc(退出编辑) :eq(保存)
+进入vim编辑模式 i(输入) esc(退出编辑) :wq(保存)
 ```
