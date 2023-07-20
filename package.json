@@ -10,10 +10,12 @@
     "dev": "vitepress dev",
     "build": "vitepress build",
     "preview": "vitepress preview",
-    "build:github": "cross-env base=/blogs/ vitepress build"
+    "build:github": "cross-env base=/blogs/ vitepress build",
+    "test":"npx tsc -w"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
-    "cross-env": "^7.0.3"
+    "cross-env": "^7.0.3",
+    "typescript": "^5.1.6"
   }
 }

@@ -21,7 +21,7 @@ packages 目录：包含了 Vue 的核心代码、编译器、运行时库等关
 - @vue/compiler-ssr             用于在服务端渲染中编译和处理Vue组件
 - @vue/dts-test                 测试 TypeScript 类型定义文件（.d.ts）的工具
 - @vue/reactivity               响应式系统的实现 实现数据响应式变化、依赖收集和触发更新的功能
-- @vue/reactivity-transform     转换工具，它可以将旧版本的 Vue2 代码迁移到 Vue3的响应式系统中 兼容
+- @vue/reactivity-transform     处理响应式数据的转换
 - @vue/runtime-core             用于在浏览器环境中处理虚拟 DOM、组件渲染和更新以及交互行为
 - @vue/runtime-dom              运行时核心库之一，用于在浏览器环境中处理虚拟 DOM、组件渲染和更新等任务
 - @vue/shared                   共享的工具函数
