@@ -49,3 +49,23 @@ function removeElement(nums: number[], val: number): number {
 }
 
 removeElement([3, 2, 2, 3], 2);
+function sortedSquares(nums: number[]): number[] {
+  let left = 0;
+  let right = nums.length - 1;
+  let end = nums.length - 1;
+  let result = new Array(nums.length - 1).fill(0);
+
+  while (right >= left) {
+    let leftResult = nums[left] * nums[left];
+    let rightResult = nums[right] * nums[right];
+    if (leftResult < rightResult) {
+      result[end] = rightResult;
+      right--;
+    } else {
+      result[end] = leftResult;
+      left++;
+    }
+    end--;
+  }
+  return result;
+}
