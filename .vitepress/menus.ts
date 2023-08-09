@@ -42,14 +42,7 @@ export default [
     collapsed: false,
     items: [
       { text: "git", link: "/page/other/git/" },
-      {
-        text: "算法",
-        collapsed: false,
-        items: [
-          { text: "常见", link: "/page/other/algorithm/common" },
-          { text: "leetcode", link: "/page/other/algorithm/leetcode" },
-        ],
-      },
+      { text: "算法", link: "/page/other/algorithm/common"}
     ],
   },
 ];
