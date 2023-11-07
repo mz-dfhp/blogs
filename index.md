@@ -9,10 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /markdown-examples
-    - theme: alt
-      text: 关于
-      link: /api-examples
+      link: /page/client/javaScript/
 
 features:
   - icon: 💡

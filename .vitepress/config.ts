@@ -16,13 +16,6 @@ export default defineConfig({
 
     nav: [
       { text: "首页", link: "/" },
-      {
-        text: "examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
       ...menus,
     ],
 
