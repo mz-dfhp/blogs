@@ -3,14 +3,16 @@ export default [
     text: "前端",
     collapsed: false,
     items: [
-      { text: "HTML", link: "/page/client/html/" },
-      { text: "CSS", link: "/page/client/css/" },
-      { text: "JavaScript", link: "/page/client/javaScript/" },
-      { text: "TypeScript", link: "/page/client/typeScript/" },
-      { text: "Vue", link: "/page/client/vue/" },
-      { text: "React", link: "/page/client/react/" },
-      { text: "Webpack", link: "/page/client/webpack/" },
-      { text: "Vite", link: "/page/client/vite/" },
+      { text: "HTML", link: "/page/client/HTML/" },
+      { text: "CSS", link: "/page/client/CSS/" },
+      { text: "JavaScript", link: "/page/client/JavaScript/" },
+      { text: "TypeScript", link: "/page/client/TypeScript/" },
+      { text: "Vue", link: "/page/client/Vue/" },
+      { text: "React", link: "/page/client/React/" },
+      { text: "Webpack", link: "/page/client/Webpack/" },
+      { text: "Vite", link: "/page/client/Vite/" },
+      { text: "Electron", link: "/page/client/Electron/" },
+      { text: "Flutter", link: "/page/client/Flutter/" },
     ],
   },
   {
@@ -18,30 +20,38 @@ export default [
     collapsed: false,
     items: [
       {
-        text: "node",
+        text: "Node",
         items: [
-          { text: "express", link: "/page/service/node/express/" },
-          { text: "nest", link: "/page/service/node/nest/" },
+          { text: "Express", link: "/page/service/Node/Express/" },
+          { text: "Nest", link: "/page/service/Node/Nest/" },
         ],
       },
+    ],
+  },
+  {
+    text: "数据库",
+    collapsed: false,
+    items: [
+      { text: "MongoDB", link: "/page/database/MongoDB/" },
+      { text: "MySQL", link: "/page/database/MySQL/" },
     ],
   },
   {
     text: "源码",
     collapsed: false,
     items: [
-      { text: "Vue2", link: "/page/code/vue2/" },
-      { text: "VueRouter", link: "/page/code/vueRouter/" },
-      { text: "Vuex", link: "/page/code/vuex/" },
-      { text: "Vue3", link: "/page/code/vue3/" },
-      { text: "Pinia", link: "/page/code/pinia/" },
+      { text: "Vue2", link: "/page/code/Vue2/" },
+      { text: "VueRouter", link: "/page/code/VueRouter/" },
+      { text: "Vuex", link: "/page/code/Vuex/" },
+      { text: "Vue3", link: "/page/code/Vue3/" },
+      { text: "Pinia", link: "/page/code/Pinia/" },
     ],
   },
   {
     text: "其他",
     collapsed: false,
     items: [
-      { text: "git", link: "/page/other/git/" },
+      { text: "Git", link: "/page/other/Git/" },
       { text: "算法", link: "/page/other/algorithm/common"}
     ],
   },
