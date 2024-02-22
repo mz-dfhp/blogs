@@ -21,10 +21,7 @@ export default [
     items: [
       {
         text: "Node",
-        items: [
-          { text: "Express", link: "/page/service/Node/Express/" },
-          { text: "Nest", link: "/page/service/Node/Nest/" },
-        ],
+        link: "/page/service/Node/"
       },
     ],
   },
