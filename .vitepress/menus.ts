@@ -23,6 +23,10 @@ export default [
         text: "Node",
         link: "/page/service/Node/"
       },
+      {
+        text: "Go",
+        link: "/page/service/Go/"
+      },
     ],
   },
   {
