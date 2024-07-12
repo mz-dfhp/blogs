@@ -13,14 +13,11 @@ export default defineConfig({
     search: {
       provider: "local",
     },
-
     nav: [
       { text: "首页", link: "/" },
       ...menus,
     ],
-
     sidebar: [...menus],
-
     socialLinks: [{ icon: "github", link: "https://github.com/mz-dfhp/blogs" }],
   },
 });
