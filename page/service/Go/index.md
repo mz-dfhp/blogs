@@ -10,10 +10,8 @@ func main()  {
 	fmt.Println("hello world")
 }
 ```
-
+#### 运行
 ```bash
-// 生成可执行文件 hello.exe
-go build hello.go
-// 编译后 直接运行
-go run hello.go 
+go build hello.go # 生成可执行文件 hello.exe
+go run hello.go # 编译后 直接运行
 ```
