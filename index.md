@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /page/client/javaScript/
+      link: /page/client/javascript/
 
 features:
   - icon: 💡
