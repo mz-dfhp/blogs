@@ -5,8 +5,8 @@ export default [
     items: [
       { text: "HTML", link: "/page/client/html/" },
       { text: "CSS", link: "/page/client/css/" },
-      { text: "JavaScript", link: "/page/client/javaScript/" },
-      { text: "TypeScript", link: "/page/client/typeScript/" },
+      { text: "JavaScript", link: "/page/client/javascript/" },
+      { text: "TypeScript", link: "/page/client/typescript/" },
       { text: "Vue", link: "/page/client/vue/" },
       { text: "React", link: "/page/client/react/" },
       { text: "Webpack", link: "/page/client/webpack/" },
@@ -33,8 +33,8 @@ export default [
     text: "数据库",
     collapsed: false,
     items: [
-      { text: "MongoDB", link: "/page/database/mongoDB/" },
-      { text: "MySQL", link: "/page/database/mySQL/" },
+      { text: "MongoDB", link: "/page/database/mongodb/" },
+      { text: "MySQL", link: "/page/database/mysql/" },
     ],
   },
   {
@@ -42,7 +42,7 @@ export default [
     collapsed: false,
     items: [
       { text: "Vue2", link: "/page/code/vue2/" },
-      { text: "VueRouter", link: "/page/code/vueRouter/" },
+      { text: "VueRouter", link: "/page/code/vuerouter/" },
       { text: "Vuex", link: "/page/code/vuex/" },
       { text: "Vue3", link: "/page/code/vue3/" },
       { text: "Pinia", link: "/page/code/pinia/" },
