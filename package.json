@@ -11,7 +11,8 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "build:github": "cross-env base=/blogs/ vitepress build",
-    "test": "npx tsc -w"
+    "test": "npx tsc -w",
+    "commit": "node scripts/commit.mjs"
   },
   "devDependencies": {
     "@types/node": "^20.3.1",
