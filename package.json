@@ -5,7 +5,8 @@
   "scripts": {
     "docs:dev": "pnpm -C docs dev",
     "docs:build": "pnpm -C docs build",
-    "docs:build:github": "pnpm -C docs build:github"
+    "docs:build:github": "pnpm -C docs build:github",
+    "commit": "node scripts/commit.mjs"
   },
   "keywords": [],
   "author": "",

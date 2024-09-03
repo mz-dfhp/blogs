@@ -8,7 +8,6 @@
     "build": "vitepress build",
     "preview": "vitepress preview",
     "build:github": "cross-env base=/blogs/ vitepress build",
-    "test": "npx tsc -w",
     "commit": "node scripts/commit.mjs"
   },
   "dependencies": {
