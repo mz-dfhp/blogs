@@ -6,9 +6,7 @@ settings:
 
 importers:
 
-  .: {}
-
-  docs:
+  .:
     dependencies:
       vitepress:
         specifier: ^1.3.4
@@ -20,8 +18,6 @@ importers:
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
-
-  server: {}
 
 packages:
 

@@ -17,11 +17,11 @@ jobs:
         run: |
           npm i -g pnpm
           pnpm install --no-frozen-lockfile
-          pnpm run build:github
+          pnpm run docs:build:github
 
       - name: Deploy to github-pages🚀 # 部署到github.io
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: static-pages # 部署后提交到的分支
-          folder: .vitepress/dist # 这里填打包好的目录名称
+          folder: ./docs/.vitepress/dist # 这里填打包好的目录名称
 

@@ -1,6 +1,9 @@
-.vitepress/cache
-.vitepress/dist
 node_modules
 dist
 
-*.exe
+.DS_Store
+.idea
+.pnpm-store
+
+/docs/.vitepress/cache
+/docs/.vitepress/dist
