@@ -53,7 +53,8 @@ export default [
     collapsed: false,
     items: [
       { text: "Git", link: "/page/other/git/" },
-      { text: "算法", link: "/page/other/algorithm/common"}
+      { text: "算法", link: "/page/other/algorithm/common"},
+      { text: "笔记", link: "/page/other/note/"}
     ],
   },
 ];
