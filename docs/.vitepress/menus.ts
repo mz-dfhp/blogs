@@ -42,6 +42,8 @@ function generateMenu(folder: string, prefix = '') {
   });
   return menu;
 }
-const routes = generateMenu(join(process.cwd(), 'page'));
-
+const routes = generateMenu(join(process.cwd(), 'page')).sort((a, b) => {
+  const order: string[] = Object.values(titleMap)
+ return order.indexOf(a.text) - order.indexOf(b.text)
+})
 export default routes
