@@ -1,60 +1,47 @@
-export default [
-  {
-    text: "前端",
-    collapsed: false,
-    items: [
-      { text: "HTML", link: "/page/client/html/" },
-      { text: "CSS", link: "/page/client/css/" },
-      { text: "JavaScript", link: "/page/client/javascript/" },
-      { text: "TypeScript", link: "/page/client/typescript/" },
-      { text: "Vue", link: "/page/client/vue/" },
-      { text: "React", link: "/page/client/react/" },
-      { text: "Webpack", link: "/page/client/webpack/" },
-      { text: "Vite", link: "/page/client/vite/" },
-      { text: "Electron", link: "/page/client/electron/" },
-      { text: "Flutter", link: "/page/client/flutter/" },
-    ],
-  },
-  {
-    text: "服务端",
-    collapsed: false,
-    items: [
-      {
-        text: "Node",
-        link: "/page/service/node/"
-      },
-      {
-        text: "Go",
-        link: "/page/service/go/"
-      },
-    ],
-  },
-  {
-    text: "数据库",
-    collapsed: false,
-    items: [
-      { text: "MongoDB", link: "/page/database/mongodb/" },
-      { text: "MySQL", link: "/page/database/mysql/" },
-    ],
-  },
-  {
-    text: "源码",
-    collapsed: false,
-    items: [
-      { text: "Vue2", link: "/page/code/vue2/" },
-      { text: "VueRouter", link: "/page/code/vuerouter/" },
-      { text: "Vuex", link: "/page/code/vuex/" },
-      { text: "Vue3", link: "/page/code/vue3/" },
-      { text: "Pinia", link: "/page/code/pinia/" },
-    ],
-  },
-  {
-    text: "其他",
-    collapsed: false,
-    items: [
-      { text: "Git", link: "/page/other/git/" },
-      { text: "算法", link: "/page/other/algorithm/common"},
-      { text: "笔记", link: "/page/other/note/"}
-    ],
-  },
-];
+import process from 'node:process'
+import { readdirSync, statSync } from "node:fs";
+import { join } from "node:path";
+
+const titleMap = {
+  'client': '前端',
+  'service': '服务端',
+  'database': '数据库',
+  'other': '其他',
+}
+
+function generateMenu(folder: string, prefix = '') {
+  const files = readdirSync(folder);
+  const menu: any[] = [];
+  files.forEach(file => {
+    const filePath = join(folder, file);
+    const stat = statSync(filePath);
+
+    if (stat.isDirectory()) {
+      const readdirList = readdirSync(filePath);
+      if (readdirList?.length === 1 && readdirList.includes('index.md')) {
+        const title = file.replace('.md', '');
+        menu.push({
+          text: title,
+          link: '/page/' + prefix + title
+        })
+      } else {
+        const items = generateMenu(filePath, prefix + file + '/');
+        menu.push({
+          text: titleMap[file] ? titleMap[file] : file,
+          collapsed: false,
+          items
+        });
+      }
+    } else if (file.endsWith('.md')) {
+      const title = file.replace('.md', '');
+      menu.push({
+        text: title,
+        link: '/page/' + prefix + title
+      });
+    }
+  });
+  return menu;
+}
+const routes = generateMenu(join(process.cwd(), 'page'));
+
+export default routes
